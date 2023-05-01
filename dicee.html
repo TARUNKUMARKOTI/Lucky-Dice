@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Bruno Ace SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/f858880a6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <script src="dice.js" type="text/javascript"></script>
+  </head>
+  <body onload="dice()">
+    <div>
+      <strong class="heading-title">Lucky Dice</strong>
+      <a class="fa-solid fa-circle-question fa-2x about-icon" onclick="document.getElementById('id01').style.display='block'"></a>
+    <div id="id01" class="modal">
+
+          <div class="modal-content animate">
+            <div class="imgcontainer">
+
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h2>Lucky Dice</h2>
+            </div>
+
+            <div class="container">
+              <p class="popup-text">
+                Welcome to the online dice game, where luck is the name of the game! This website uses HTML, CSS, and JavaScript to simulate the experience of playing a dice game against the computer or against a friend.</p>
+                 <p class="popup-text">Click on Roll The Dice or Refresh the page and see if you can beat the odds and come out on top! This game is easy to play - simply click on Roll The Dice or Refresh the page to roll the dice, and watch as the numbers are revealed. The goal is to get the highest score possible, and with each roll, you'll have to make strategic decisions to improve your chances of winning.
+              </p>
+              <p class="popup-text">This website is perfect for anyone who loves a good game of chance, and this easy-to-use interface makes it accessible for players of all skill levels. Whether you're looking to test your luck against the computer or challenge a friend to a game, our online dice game is sure to provide hours of fun and entertainment.</p>
+              <p class="popup-text">So what are you waiting for? click on Roll The Dice or  Refresh the page to see if fortune favors you in this online dice game!</p>
+            </div>
+            <div class="container">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <h1>Refresh Me</h1>
+      <div>
+      <button class="rollbtn" type="button" onclick="dice()">Roll The Dice</button></div>
+      <div>
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="">
+      </div>
+        <span>
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="">
+      </div>
+    </span>
+  </div>
+    </div>
+  </body>
+</html>
